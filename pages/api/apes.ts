@@ -20,7 +20,7 @@ export default async function userHandler(req: NextApiRequest, res: NextApiRespo
       res.status(200).json(payload)
       break
     case 'POST':
-      res.status(200).json({ })
+      res.status(200).json(payload)
       break
     default:
       res.setHeader('Allow', ['GET', 'POST'])
