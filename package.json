@@ -3,7 +3,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:ts": "tsc --pretty --noEmit",
+    "format": "npx prettier --write **/*.{ts,tsx}",
+    "lint": "npx eslint . --ext ts --ext tsx --ext js"
   },
   "dependencies": {
     "bn.js": "^5.2.0",
